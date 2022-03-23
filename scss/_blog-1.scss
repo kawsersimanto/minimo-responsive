@@ -1,0 +1,28 @@
+.blog-1 {
+  padding: 3.75rem 0;
+}
+
+.row {
+  padding: 3.75rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "card-left card-right";
+  gap: 3.75rem;
+}
+
+.card-left {
+  grid-area: card-left;
+}
+
+.card-img {
+  min-width: 100%;
+  img{
+    width: 100%;
+  }
+}
+
+
+.card-right {
+  grid-area: card-right;
+}

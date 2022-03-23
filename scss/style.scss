@@ -1,0 +1,18 @@
+@import 'mixin';
+@import 'variables';
+
+// sections 
+@import 'header';
+@import 'banner';
+@import 'gateaway';
+@import 'blog-1';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  @include playfair;
+}

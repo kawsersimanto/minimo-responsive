@@ -1,0 +1,27 @@
+@import 'variables';
+
+.gateaway {
+  padding: 1.9rem 0;
+  // @include border;
+}
+
+.container-2 {
+  padding: 0 10%;
+  // @include border;
+}
+
+.tag {
+  @include padding;
+  @include ubuntu;
+  text-transform: uppercase;
+}
+
+.title {
+  @include padding;
+  font-size: 1.9rem;
+  font-weight: 400;
+}
+
+.description {
+  padding: 1.9rem 0;
+}
