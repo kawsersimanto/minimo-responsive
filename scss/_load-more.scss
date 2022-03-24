@@ -2,7 +2,8 @@
 @import 'mixin';
 
 .load-more {
-  padding-top: 0;
+  padding-bottom: 15rem;
+  // @include border;
 }
 
 .container-3 {
@@ -12,5 +13,11 @@
     background-color: transparent;
     @include playfair;
     font-size: 1.4rem;
+    transition: all .3s ease 0;
+    &:hover{
+      color: #fff;
+      background-color: $gray;
+      cursor: pointer;
+    }
   }
 }

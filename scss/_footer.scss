@@ -1,0 +1,40 @@
+@import 'mixin';
+@import 'variables';
+
+footer{
+  background-color: $dark-gray;
+  padding: 2.5rem 0;
+}
+
+.footer-content {
+  @include flex;
+}
+
+.terms {
+}
+
+.footer-text{
+  color: $dark-black;
+  transition: all .3s ease 0s;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.footer-text,
+.social-media-icons img{
+  margin-right: 0.9rem
+}
+
+.social-medias {
+  @include flex(center);
+}
+
+.social-media-icons {
+  img:last-child{
+    margin-right: 0;
+  }
+  img:hover{
+    cursor: pointer;
+  }
+}

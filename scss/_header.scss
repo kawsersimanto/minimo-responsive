@@ -1,12 +1,18 @@
 header{
+  width: 100%;
   padding: 2.5rem 0;
   // @include border;
 }
 
 .container{
   padding: 0 5%;
-  @include flex;
+  // @include flex;
   // @include border;
+}
+
+.navbar{
+  width: 100%;
+  @include flex;
 }
 
 .logo {
