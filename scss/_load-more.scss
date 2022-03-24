@@ -1,0 +1,16 @@
+@import 'variables';
+@import 'mixin';
+
+.load-more {
+  padding-top: 0;
+}
+
+.container-3 {
+  .button-2{
+    padding: 1.2rem 2.2rem;
+    border: 1px solid $dark-black;
+    background-color: transparent;
+    @include playfair;
+    font-size: 1.4rem;
+  }
+}

@@ -6,7 +6,8 @@
   background-color: $dark-gray;
 }
 
-.newsletter-content {
+.newsletter-content, 
+.container-3 {
   @include flex(center);
   flex-direction: column;
 }
