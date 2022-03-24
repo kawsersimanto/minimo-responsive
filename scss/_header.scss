@@ -1,3 +1,5 @@
+@import 'hamburger';
+
 header{
   width: 100%;
   padding: 2.5rem 0;
@@ -24,14 +26,14 @@ header{
 }
 
 .menu {
-  // @include border;
+  // display: flex;
   ul{
     display: flex;
     li{
       display: inline-block;
       list-style: none;
       &:last-child a{
-        padding-right: 0;
+        margin-right: 0;
       }
       a{
         margin: 0 3.75rem;

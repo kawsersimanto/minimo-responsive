@@ -1,0 +1,31 @@
+@import 'variables';
+@import 'mixin';
+
+@media only screen and (max-width:990px) {
+
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu{
+    width: 100%;
+    ul{
+      flex-direction: column;
+      li{
+        margin-top: 0.3rem;
+        padding: 0.6rem 0;
+        width: 100%;
+        background-color: $dark-gray;
+        text-align: center;
+        a{
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .hamburger-menu.active{
+    display: flex;
+  }
+}

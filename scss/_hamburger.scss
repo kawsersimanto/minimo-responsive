@@ -1,0 +1,22 @@
+@import 'mixin';
+
+.hamburger-menu{
+  width: 28px;
+  height: 27px;
+  display: none;
+  justify-content: space-between;
+  flex-direction: column;
+  position: absolute;
+  right: 5%;
+  // @include border;
+}
+
+.bar{
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  background-color: black;
+  &:nth-child(2){
+    margin: 8px 0;
+  }
+}
