@@ -1,0 +1,50 @@
+@import 'variables';
+@import 'mixin';
+
+.newsletter {
+  padding: 3.75rem 0;
+  background-color: $dark-gray;
+}
+
+.newsletter-content {
+  @include flex(center);
+  flex-direction: column;
+}
+
+.newsletter-title {
+  h2{
+    padding-bottom: 1.9rem;
+    color: $dark-black;
+  }
+}
+
+.signup-form {
+  padding-top: 1.9rem;
+  @include flex;
+  position: relative;
+  input{
+    padding: 0.8rem 11.25rem 0.8rem 0;
+    min-width: 25rem;
+    background-color: transparent;
+    @include playfair;
+    border: none;
+    border-bottom: 1px solid $gray;
+    &:focus{
+      outline: none;
+    }
+  }
+}
+
+.button {
+  position: absolute;
+  right: 0;
+  transform: translateY(25%);
+  background-color: transparent;
+  border: none;
+  img{
+    width: 100%;
+  }
+  &:focus{
+    outline: none;
+  }
+}
