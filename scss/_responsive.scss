@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'mixin';
+@import 'header';
 
 @media only screen and (max-width:990px) {
 
@@ -8,24 +9,33 @@
     align-items: flex-start;
   }
 
-  .menu{
+  .nav-links{
     width: 100%;
+    display: none;
     ul{
+      padding: .5rem 0;
+      width: 100%;
       flex-direction: column;
       li{
-        margin-top: 0.3rem;
-        padding: 0.6rem 0;
+        margin: .1rem 0;
         width: 100%;
-        background-color: $dark-gray;
         text-align: center;
+        background-color: $dark-gray;
         a{
-          margin: 0;
+          padding: .5rem 1rem;
+        }
+        &:last-child a{
+          padding: .5rem 1rem;
         }
       }
     }
   }
-
-  .hamburger-menu.active{
+  .toggle-button{
     display: flex;
   }
+
+  .nav-links.active{
+    display: flex;
+  }
+
 }

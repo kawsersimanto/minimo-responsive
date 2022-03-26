@@ -1,49 +1,46 @@
 @import 'hamburger';
+@import 'variables';
+@import 'mixin';
 
-header{
-  width: 100%;
-  padding: 2.5rem 0;
-  // @include border;
-}
-
-.container{
+.container {
   padding: 0 5%;
-  // @include flex;
   // @include border;
 }
 
-.navbar{
+.navbar {
+  padding: 2.5rem 0;
   width: 100%;
   @include flex;
 }
 
-.logo {
-  // @include border;
+.brand-title {
   min-width: 10%;
+  &:hover{
+    cursor: pointer;
+  }
   img{
     width: 100%;
   }
 }
 
-.menu {
-  // display: flex;
+.nav-links {
   ul{
     display: flex;
     li{
-      display: inline-block;
       list-style: none;
-      &:last-child a{
-        margin-right: 0;
-      }
       a{
-        margin: 0 3.75rem;
-        color: inherit;
+        padding: 0 3.75rem;
+        display: inline-block;
+        color: $gray;
         text-decoration: none;
         text-transform: uppercase;
         transition: all 0.3s ease 0s;
         &:hover{
-          border-bottom: 1px solid $gray;
+          text-decoration: underline;
         }
+      }
+      &:last-child a{
+        padding-right: 0;
       }
     }
   }
