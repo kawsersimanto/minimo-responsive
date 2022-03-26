@@ -5,6 +5,5 @@ toggleButton.addEventListener("click", showNavLinks);
 
 function showNavLinks(e){
   navLinks.classList.toggle("active");
+  toggleButton.classList.toggle("react");
 }
-
-console.log(toggleButton, navLinks);

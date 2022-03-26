@@ -21,11 +21,12 @@
 
 .signup-form {
   padding-top: 1.9rem;
-  @include flex;
+  // @include flex;
+  text-align: center;
   position: relative;
   input{
     padding: 0.8rem 11.25rem 0.8rem 0;
-    min-width: 25rem;
+    width: 90%;
     background-color: transparent;
     color: $dark-black;
     @include playfair;
@@ -39,12 +40,12 @@
 
 .button {
   position: absolute;
-  right: 0;
-  transform: translateY(25%);
+  top: 48px;
+  right: 38px;
   background-color: transparent;
   border: none;
   img{
-    width: 100%;
+    min-width: 100%;
   }
   &:focus{
     outline: none;

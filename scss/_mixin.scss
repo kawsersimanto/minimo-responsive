@@ -7,6 +7,14 @@
   color: $gray;
 }
 
+@mixin mobile-description-font {
+  font-size: 0.9rem;
+}
+
+@mixin mobile-title-font {
+  font-size: 1.5rem;
+}
+
 @mixin ubuntu {
   font-family: $ubuntu;
   font-size: 0.9rem;
@@ -24,48 +32,92 @@
   justify-content: $direction;
 }
 
-@mixin  padding {
+@mixin padding {
   padding-top: 1.9rem;
 }
 
-// responsive functions 
+// responsive functions
 
 @mixin tablet {
-  @media only screen and (max-width:990px) {
-
-    .navbar{
+  @media only screen and (max-width: 990px) {
+    // hamburger menu
+    .navbar {
       flex-direction: column;
       align-items: flex-start;
     }
-  
-    .nav-links{
+
+    .nav-links {
       width: 100%;
       display: none;
-      ul{
-        padding: .5rem 0;
+      ul {
+        padding: 0.5rem 0;
         width: 100%;
         flex-direction: column;
-        li{
-          margin: .1rem 0;
+        li {
+          margin: 0.1rem 0;
           width: 100%;
           text-align: center;
           background-color: $dark-gray;
-          a{
-            padding: .5rem 1rem;
+          a {
+            padding: 0.5rem 1rem;
           }
-          &:last-child a{
-            padding: .5rem 1rem;
+          &:last-child a {
+            padding: 0.5rem 1rem;
           }
         }
       }
     }
-    .toggle-button{
+    .toggle-button {
       display: flex;
     }
-  
-    .nav-links.active{
+
+    .nav-links.active {
       display: flex;
     }
-  
+
+    // cross icon 
+    .toggle-button.react {
+      .bar:nth-child(2) {
+        opacity: 0;
+      }
+      .bar:nth-child(1) {
+        transform: translateY(13px) rotate(45deg);
+      }
+      .bar:nth-child(3) {
+        transform: translateY(-13px) rotate(-45deg);
+      }
+    }
+
+  }
+}
+
+@mixin mobile {
+  @media only screen and (max-width: 780px) {
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "card-left"
+        "card-right";
+    }
+
+    .card-left {
+      grid-area: card-left;
+    }
+
+    .card-right {
+      grid-area: card-right;
+    }
+
+    .description {
+      @include mobile-description-font;
+    }
+
+    .title {
+      @include mobile-title-font;
+    }
+
   }
 }
