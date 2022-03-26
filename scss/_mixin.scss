@@ -27,3 +27,45 @@
 @mixin  padding {
   padding-top: 1.9rem;
 }
+
+// responsive functions 
+
+@mixin tablet {
+  @media only screen and (max-width:990px) {
+
+    .navbar{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links{
+      width: 100%;
+      display: none;
+      ul{
+        padding: .5rem 0;
+        width: 100%;
+        flex-direction: column;
+        li{
+          margin: .1rem 0;
+          width: 100%;
+          text-align: center;
+          background-color: $dark-gray;
+          a{
+            padding: .5rem 1rem;
+          }
+          &:last-child a{
+            padding: .5rem 1rem;
+          }
+        }
+      }
+    }
+    .toggle-button{
+      display: flex;
+    }
+  
+    .nav-links.active{
+      display: flex;
+    }
+  
+  }
+}
