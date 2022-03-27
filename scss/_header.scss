@@ -10,12 +10,25 @@
 .navbar {
   padding: 2.5rem 5%;
   width: 100%;
-  background-color: white;
   @include flex;
   position: fixed;
   top: 0;
   left: 0;
-  transition: all 0.6s ease 0s;
+  transition: all 0.3s ease 0s;
+  z-index: 1000;
+}
+
+.navbar.sticky{
+  padding: 1.5rem 5%;
+  background-color: $dark-gray;
+}
+
+.nav-links{
+  ul{
+    li.sticky{
+      border-bottom: 1px solid white;
+    }
+  }
 }
 
 .brand-title {

@@ -54,7 +54,6 @@
         width: 100%;
         flex-direction: column;
         li {
-          margin: 0.1rem 0;
           width: 100%;
           text-align: center;
           background-color: $dark-gray;
@@ -73,7 +72,9 @@
 
     .nav-links.active {
       display: flex;
+      background-color: $dark-gray;
     }
+    
 
     // cross icon 
     .toggle-button.react {
